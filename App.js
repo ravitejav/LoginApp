@@ -10,24 +10,15 @@ import React from 'react';
 import {
   SafeAreaView,
   StyleSheet,
-  ScrollView,
   View,
   Text,
-  StatusBar,
   Image,
   TextInput,
-  Button,
   TouchableOpacity,
   Alert,
 } from 'react-native';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import loginLogo from "./Images/loginLogo.png";
 
 const login = () => {
   Alert.alert('You will be logged in!!');
@@ -38,10 +29,7 @@ const App: () => React$Node = () => {
     <>
       <SafeAreaView style={styles.main}>
         <View style={styles.imageView}>
-          <Image
-            style={styles.image}
-            source={require('./Images/loginLogo.png')}
-          />
+          <Image style={styles.image} source={loginLogo} />
           <Text style={{alignSelf: 'center'}}>Please login</Text>
         </View>
         <View style={styles.inputFields}>
